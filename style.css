@@ -1,0 +1,107 @@
+/* Font and basic settings */
+body {
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(135deg, #FDE2E4 0%, #FAD2E1 100%);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    background-color: #FFF1F3;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    width: 80%;
+    max-width: 800px;
+}
+
+header {
+    background: linear-gradient(135deg, #FAD2E1 0%, #F4ACB7 100%);
+    padding: 40px;
+    color: white;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.about {
+    padding: 40px 20px;
+    background-color: #FFF1F3;
+}
+
+.about h2 {
+    color: #D993A6;
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about p {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+footer {
+    background-color: #FAD2E1;
+    color: #333;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Adding animations */
+header h1, .about h2 {
+    animation: fadeInDown 1s ease-out;
+}
+
+.about img, .about p {
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
